@@ -1,0 +1,30 @@
+{
+    "name": "lambda-langchain-starter",
+    "version": "0.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "tsx app.ts"
+    },
+    "keywords": [],
+    "author": "Nick",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@types/uuid": "^10.0.0",
+        "axios": "^1.8.4",
+        "colors": "^1.4.0",
+        "uuid": "^11.1.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.0",
+        "@typescript-eslint/eslint-plugin": "^8.16.0",
+        "@typescript-eslint/parser": "^8.16.0",
+        "eslint": "^9.15.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "tsx": "^4.19.2",
+        "typescript": "^5.7.2"
+    }
+}
