@@ -1,5 +1,6 @@
 import axios from 'axios';
 import colors from 'colors';
+import 'dotenv/config';
 import readline from 'readline';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -35,7 +36,7 @@ async function sendMessage(content: string) {
     const loadingInterval = setInterval(showLoading, 100);
 
     try {
-        const response = await axios.post('http://localhost:3000/bots/fd955737-6453-48bf-b7fa-ac60eac23778/messages', {
+        const response = await axios.post(process.env.MESSAGES_URL, {
             thread_id: threadId,
             content: content,
         });
@@ -73,6 +74,6 @@ chat();
 
 // Handle readline close
 rl.on('close', () => {
-    console.log('\nGoodbye!');
+    console.log(colors.yellow('\nGoodbye!'));
     process.exit(0);
 });
