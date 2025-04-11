@@ -61,7 +61,7 @@ async function chat() {
                 return;
             }
 
-            await sendMessage(input);
+            await sendMessage(input.trim());
             askQuestion(); // Continue the chat loop
         });
     };
